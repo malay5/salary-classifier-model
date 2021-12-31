@@ -31,11 +31,11 @@ def success():
     print(model)
     print(result)
     if result==0:
-        return "Income is <=50K"
+        return "The ideal income for the selected person would be <= $50K"
     elif result==1:
-        return "Income is >50K"
+        return "The ideal income for the selected person would be >$50K"
     else:
-        return "Some is wrong"
+        return "Something is wrong"
 
 with app.test_request_context():
     url_for('Home')
